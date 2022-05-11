@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="user">
+	<select id="user_list" resultType="vo.UserVO">
+		select * from login
+	</select>
+	
+	<select id="selectOne_id" resultType="vo.UserVO" parameterType="String">
+		select * from login where id=#{id}
+	</select>
+	
+	<select id="selectOne_nick" resultType="vo.UserVO" parameterType="String">
+		select * from login where nickname=#{nickname}
+	</select>
+	
+	<select id="selectOne_email" resultType="vo.UserVO" parameterType="String">
+		select * from login where email=#{email}
+	</select>
+	
+	<insert id="insert" parameterType="vo.UserVO">
+		insert into login values(
+			seq_login_idx.nextVal,
+			#{nickname},
+			#{name},
+			#{tel},
+			#{id},
+			#{pwd},
+			#{email})
+	</insert>
+	
+	<select id="login_select" resultType="vo.UserVO" parameterType="vo.UserVO">
+		select id,pwd from login where id=#{id} AND pwd=#{pwd}
+	</select>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+

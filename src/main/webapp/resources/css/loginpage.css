@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+*{
+	list-style: none;  /* 점 없애기 */
+	text-decoration: none;  /* a태그 밑줄 색변경 x */
+	border-collapse: collapse; /* teble 줄 한줄로 */
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+#logo_img{
+	width: 347px;
+	height: 112px;
+	margin-left: 252px;
+	margin-bottom: 10px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+a{
+	cursor: pointer;
+}
+
+#login_div{
+	/* border: 1px solid red; */
+	width: 600px;
+	height: 500px;
+	margin: auto;
+	margin-top: 50px;
+	overflow: hidden;
+}
+
+input{
+	width: 280px;
+	height: 40px;
+	margin: 2px;
+	border: 1px solid silver;
+	margin-left: -100px;
+}
+
+#login_id_pwd_div{
+	margin: auto;
+	/* border: 1px solid gray; */
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+#login_button{
+	padding: 32px 32px;
+	float: right;
+	margin-top: -86px;
+	margin-right: 105px;
+	border: none;
+	outline: 0;
+	background-color: #333333;
+	color: white;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+#icon_div{
+	font-size: 12px;
+	margin-bottom: 12px;
+}
+
+a{
+	font-size: 14px;
+	font-weight: 500;
+}
+
+hr{
+	height:1px;
+	background-color: silver;
+	border : 0;
+	margin-bottom: 20px;
+}
+
+p{
+	font-size: 12px;
+	color: #333333;
+}
+
+#join_button{
+	padding: 13px 150px;
+	border: none;
+	background-color: #333333;
+	color: white;
+	margin-top: 16px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

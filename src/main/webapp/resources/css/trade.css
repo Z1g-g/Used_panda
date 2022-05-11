@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+#main_div{
+	width: 1200px;
+	height: 1000px;
+	margin: auto;
+	/* border: 1px solid black; */
+}
+
+#writing_div{
+	
+	width: 800px;
+	height: 800px;
+	/* border: 1px solid blue; */
+	float: left;
+	margin-top: 100px;
+	margin-left: 250px;
+}
+
+#title_input{
+	border: 1px solid silver;
+	width: 700px;
+	height: 50px;
+	border-radius: 3px;
+	font-size: 17px;
+}
+
+textarea{
+	margin-top:13px;
+    resize: none;
+    width: 700px;
+    height: 300px;
+    border: 1px solid silver;
+    font-size: 15px;
+    border-radius: 3px;
+	}
+	
+#price_input{
+	margin-top:13px;
+}
+
+#area_input{
+	margin-top:13px;
+}
+
+#price_input{
+	width: 150px;
+	height: 30px;
+	border: 1px solid silver;
+}
+
+#area_input{
+	width: 650px;
+	height: 40px;
+	border: 1px solid silver;
+}
+
+#file_input{
+	margin-top: 13px;
+}
+
+#pwd_input{
+	margin-top:15px;
+	width: 175px;
+	height: 30px;
+	border: 1px solid silver;
+}
+
+#go_button{
+	padding: 13px 60px;
+	border: none;
+	background-color: #333333;
+	color: white;
+	margin-top: -7px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+#stop_button{
+	padding: 13px 60px;
+	border: none;
+	background-color: #333333;
+	color: white;
+	margin-top: -7px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.p{
+	font-size: 12px;
+	margin-top: 35px;
+}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

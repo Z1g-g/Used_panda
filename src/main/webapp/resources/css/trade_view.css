@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+*{
+	list-style: none;  /* 점 없애기 */
+	text-decoration: none;  /* a태그 밑줄 색변경 x */
+	border-collapse: collapse; /* teble 줄 한줄로 */
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+a{
+	cursor: pointer;
+}
+
+#logo_div{
+	overflow: hidden;
+	width: 1400px;
+	height: 140px;
+	/* border: 1px solid black; */
+	margin:auto;
+}
+
+/* 로그인 a태그 */
+.login_a{
+	font-size: 16px;
+	float: left;
+	margin-left: 800px;
+	overflow: hidden;
+	font-weight: 900;
+	margin-top: 0%;
+}
+
+#login_a2{
+	font-size: 16px;
+	float: left;
+	margin-left: 638px;
+	font-weight: 900;
+	margin-top: 0%;
+}
+
+#logout_a{
+	font-size: 16px;
+	float: left;
+	font-weight: 900;
+	margin-left: 9px;
+	text-decoration: underline;
+	
+}
+/* 문의게시판 a태그*/
+#board_a{
+	font-size: 16px;
+	float: left;
+	font-weight: 900;
+	margin-left: 29px;
+}
+
+#board_a2{
+	font-size: 16px;
+	float: left;
+	font-weight: 900;
+	margin-left: 30px;
+}
+
+#logo_img{
+	width: 347px;
+	height: 112px;
+	margin-bottom: 10px;
+	margin-top: 15px;
+	float: left;
+	cursor: pointer;
+}
+
+#view_div{
+	width: 740px;
+	height: 2000px;
+	/* border: 1px solid black; */
+	margin: auto;
+}
+
+#photo_img{
+	width: 740px;
+	height: 500px;
+	margin-bottom: 10px;
+}
+
+hr{
+	height:1px;
+	background-color: silver;
+	border : 0;
+	margin-top:8px;
+	margin-bottom: 8px;
+}
+
+#view_div_in{
+	width: 750px;
+	height: auto;
+	/* border: 1px solid black; */
+}
+
+#delete_input{
+	margin-top: 30px;
+	margin-left: 483px;
+	border: 1px solid silver;
+	width: 150px;
+	height: 30px;
+	border-radius: 2px;
+}
+
+#delete_button{
+	padding: 5px 10px;
+	border: none;
+	outline: 0;
+	background-color: #333333;
+	color: white;
+	font-weight: 700;
+	cursor: pointer;
+	border-radius: 2px;
+}
+
+.commu_header{
+	width: 750px;
+	height: 2px;
+	background-color: #333D79;
+}
+
+#comments_div{
+	width: 700px;
+	height: 160px;
+	/* border: 1px solid red; */
+}
+
+textarea{
+    resize: none;
+    margin-top:6px;
+    margin-left: 20px;
+    width: 670px;
+    height: 80px;
+    border: 2px solid silver;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+#insert_button{
+	margin-left: 650px;
+	padding: 3px 10px;
+	border: none;
+	background-color: #333333;
+	color: white;
+	font-weight: 700;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+#comments{
+	width: 750px;
+	height: auto;
+ /* 	border: 1px solid blue; */
+}
+
+.comments_input{
+	margin-top: 30px;
+	margin-left: 350px;
+	border: 1px solid silver;
+	width: 170px;
+	height: 23px;
+	border-radius: 2px;
+}
+
+.comments_button{
+	padding: 3px 5px;
+	border: none;
+	outline: 0;
+	background-color: #333333;
+	color: white;
+	font-weight: 700;
+	cursor: pointer;
+	border-radius: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

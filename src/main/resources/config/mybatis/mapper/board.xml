@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="board">
+	
+	<insert id="b_insert" parameterType="vo.BoardVO">
+		insert into panda_board values(
+		seq_b_board_idx.nextVal,
+		#{b_title},
+		sysdate,
+		0,
+		#{b_content},
+		#{b_pwd},
+		#{b_nickname},
+		null)
+	</insert>
+	
+	<select id="b_selectList" resultType="vo.BoardVO" parameterType="java.util.HashMap">
+		select * from
+		( select RANK() OVER( order by b_idx DESC ) no,
+		b.* from (select * from panda_board) b )
+		where no between #{s} and #{e}
+	</select>
+	
+	<!-- 전체게시물 수 -->
+	<select id="b_count" resultType="int">
+		select count(*) from panda_board
+	</select>
+	
+	<select id="idx_selectOne" parameterType="int" resultType="vo.BoardVO">
+		select * from panda_board where b_idx=#{b_idx}
+	</select>
+	
+	<delete id="b_delete" parameterType="int">
+		delete from panda_board where b_idx=#{b_idx}	
+	</delete>
+	
+	<update id="mgr_content" parameterType="vo.BoardVO">
+		update panda_board set b_state = 1, mgr_content = #{mgr_content}
+		where b_idx =#{b_idx}
+	</update>
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="used">
+	<insert id="product_insert" parameterType="vo.UsedVO">
+		insert into used values(
+			seq_used_idx.nextVal,
+			#{title},
+			#{content},
+			#{price},
+			#{area},
+			#{filename},
+			#{nickname},
+			#{email},
+			#{pwd},
+			0
+		)
+	</insert>
+	
+	<select id="product_list" resultType="vo.UsedVO">
+		select * from used order by idx DESC
+	</select>
+	
+	<select id="idx_selectOne" parameterType="int" resultType="vo.UsedVO">
+		select * from used where idx=#{idx}
+	</select>
+	
+	<delete id="trade_delete" parameterType="int">
+		delete from used where idx=#{idx}
+	</delete>
+	
+	<insert id="t_insert" parameterType="vo.T_CommentsVO">
+		insert into t_comments values(
+			sql_t_comments_idx.nextVal,
+			#{t_nickname},
+			#{t_content},
+			#{t_pwd},
+			sysdate,
+			#{t_ref}
+			)
+	</insert>
+	
+	<update id="comments_plus" parameterType="int">
+		update used set t_comments = t_comments + 1
+		where idx =#{t_ref}
+	</update>
+	
+	<update id="comments_minus" parameterType="int">
+		update used set t_comments = t_comments - 1
+		where idx =#{t_ref}
+	</update>
+	
+	<select id="trade_view_comments" parameterType="int" resultType="vo.T_CommentsVO">
+		select * from t_comments where t_ref=#{t_ref}
+		order by t_idx asc
+	</select>
+	
+	<select id="comments_check" resultType="vo.T_CommentsVO" parameterType="vo.T_CommentsVO">
+		select t_idx, t_pwd from t_comments where t_idx=#{t_idx} AND t_pwd=#{t_pwd}
+	</select>
+	
+	<delete id="comments_delete" parameterType="int">
+		delete from t_comments where t_idx=#{t_idx}
+	</delete>
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+

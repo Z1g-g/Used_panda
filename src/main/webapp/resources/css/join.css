@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+*{
+	list-style: none;  /* 점 없애기 */
+	text-decoration: none;  /* a태그 밑줄 색변경 x */
+	border-collapse: collapse; /* teble 줄 한줄로 */
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+#logo_img{
+	width: 347px;
+	height: 112px;
+	margin-left: 252px;
+	margin-bottom: 30px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+#main_div{
+	width: 1300px;
+	height: 1000px;
+	/* border: 1px solid black; */
+	margin: auto;
+	padding: 20px;
+}
+
+#p1{
+	float: right;
+	font-size: 12px;
+}
+
+p{
+	font-size: 14px;
+	float: left;
+}
+
+hr{
+	height:1px;
+	background-color: silver;
+	border : 0;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+input{
+	margin-left: 80px;
+	border: 1px solid silver;
+	height: 27px;
+	width: 160px;
+	float: left;
+}
+
+.input_4{
+	margin-left: 67px;
+}
+
+.input_2{
+	margin-left: 93px;
+}
+
+#join_button{
+	padding: 13px 100px;
+	border: none;
+	background-color: #333333;
+	color: white;
+	margin-top: 16px;
+	font-weight: 700;
+	cursor: pointer;
+	align:center;
+	margin-left: 520px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

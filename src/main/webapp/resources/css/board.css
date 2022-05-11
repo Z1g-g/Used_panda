@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+*{
+	list-style: none;  /* 점 없애기 */
+	text-decoration: none;  /* a태그 밑줄 색변경 x */
+	border-collapse: collapse; /* teble 줄 한줄로 */
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+a{
+	cursor: pointer;
+	color: black;
+}
+
+/* 중고판다 로고 */
+#logo_div{
+	overflow: hidden;
+	width: 1400px;
+	height: 140px;
+	/* border: 1px solid black; */
+	margin:auto;
+	
+}
+
+/* 로그인 a태그 */
+.login_a{
+	font-size: 16px;
+	float: left;
+	margin-left: 800px;
+	overflow: hidden;
+	font-weight: 900;
+	margin-top: 0%;
+}
+
+#login_a2{
+	font-size: 16px;
+	float: left;
+	margin-left: 638px;
+	font-weight: 900;
+	margin-top: 0%;
+}
+
+#logout_a{
+	font-size: 16px;
+	float: left;
+	font-weight: 900;
+	margin-left: 9px; /* 원래2px */
+	/* margin-top: -7px;	 */
+	text-decoration: underline;
+	
+}
+/* 문의게시판 a태그*/
+#board_a{
+	font-size: 16px;
+	float: left;
+	font-weight: 900;
+	margin-left: 29px;
+}
+
+#board_a2{
+	font-size: 16px;
+	float: left;
+	font-weight: 900;
+	margin-left: 30px;
+	/* margin-top: -7px; */
+}
+
+#logo_img{
+	width: 347px;
+	height: 112px;
+	margin-bottom: 10px;
+	margin-top: 15px;
+	float: left;
+	cursor: pointer;
+}
+
+#main_div{
+	margin: auto;
+	width: 1000px;
+	height: 1200px;
+	/* border: 1px solid black; */
+	margin-top: 30px;
+}
+
+#insert_button{
+	padding: 3px 15px;
+	margin-left: 900px;
+	margin-bottom: 2px;
+	border: none;
+	background-color: #333333;
+	color: white;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+
+#main_div tr{
+	align:center;
+	border-left: white;
+	border-right: white;
+}
+
+#main_div th{
+	font-weight: 900;
+	font-size: 13px;
+	color: black;
+	align:center;
+}
+
+#main_div td{
+	font-weight: 700;
+	font-size: 13px;
+	color: black;
+}
+
+.commu_header{
+	width: 1000px;
+	height: 2px;
+	background-color: #333D79;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
